@@ -3,7 +3,7 @@
 import atexit
 import Jetson.GPIO as GPIO
 
-GPIO.setmode(GPIO.TEGRA_SOC)
+#GPIO.setmode(GPIO.TEGRA_SOC)
 GPIO.setwarnings(False)  # shh!
 
 
@@ -132,3 +132,4 @@ i2cPorts = (
 
 # ordered as spiId, sckId, mosiId, misoId
 spiPorts = ((0, C02, C00, C01), (1, B06, B04, B05))
+
